@@ -8,6 +8,7 @@ int main()
 sc=100;
     int randomNumber=rand()%100;
     printf("Hii,Let's play a guessing game\n");
+printf("RULE: every wrong guess minus 5 marks");
     while(gu!=randomNumber)
     {
         printf("Enter your guessing number under 100:");
