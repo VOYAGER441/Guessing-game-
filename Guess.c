@@ -4,7 +4,8 @@
 int main()
 {
     srand(time(NULL));
-    int gu;
+    int gu,sc;
+sc=100;
     int randomNumber=rand()%100;
     printf("Hii,Let's play a guessing game\n");
     while(gu!=randomNumber)
@@ -24,7 +25,10 @@ int main()
         else if(gu==randomNumber)
         {
             printf("Wow,your guess is rigth %d = %d :)\n",randomNumber,gu);
-            printf("YOU WIN");
+            printf("\nYOU WIN\n");
         }
+sc=sc-5;
     }
+//add the score board 
+printf("\n your score is now=%d",sc);
 }
